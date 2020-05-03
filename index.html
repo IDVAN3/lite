@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Главная</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icons/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> -->
+</head>
+
+<body>
+    <!-- ОБОЛОЧКА -->
+    <div class="wrapper">
+        <div class="content">
+            <header class="header">
+                <div class="container">
+                    <div class="header-top">
+                        <div class="wrapper-logo">
+                            <a href="#">
+                                <img src="img/logo.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="header-top__right">
+                            <div class="header__burger">
+                                <span></span>
+                            </div>
+                            <nav class="header__menu">
+                                <ul class="header__list">
+                                    <li>
+                                        <a href="#id1" class="header__link">О нашей студии</a>
+                                    </li>
+                                    <li>
+                                        <a href="#id2" class="header__link">Наши работы</a>
+                                    </li>
+                                    <li>
+                                        <a href="#id3" class="header__link">Продвижение</a>
+                                    </li>
+                                    <li>
+                                        <a href="#id4" class="header__link">Контакты</a>
+                                    </li>
+                                    <li>
+                                        <a href="tel:+1234567890" class="header-tel mob-tel">
+                                            <div class="wrapper-icons mob-icons">
+                                                <img src="img/icons/call.svg" alt="">
+                                            </div>
+                                            <div class="wrapper-number">
+                                                <div class="number__tel">+1234567890</div>
+                                                <h4 class="number__text">Гарячая линия</h4>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <a href="tel:+1234567890" class="header-tel">
+                                <div class="wrapper-icons">
+                                    <img src="img/icons/call.svg" alt="">
+                                </div>
+                                <div class="wrapper-number">
+                                    <div class="number__tel">+1234567890</div>
+                                    <h4 class="number__text">Гарячая линия</h4>
+                                </div>
+                            </a>
+                            <div class="wrapper-button">
+                                <a href="#" class="link-button">Получить займ</a>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="section-main">
+                <div class="container">
+                    <div class="main">
+                        <div class="main__left">
+                            <div class="lend">
+                                <div class="main-lend">
+                                    <div class="wrapper-range-container">
+                                        <div class="range-container">
+                                            <form action="" >
+                                                <p class="range-text">Сколько вам нужно?</p>
+                                                <input type="range"  min="100" max="30000" value="10000" step="100" class="range" id="myRange">
+                                                <p class="range-text">На какой срок?</p>
+                                                <input type="range"  min="7" max="21" value="10" step="1" class="range" id="rangeDate">
+                                            </form>
+
+                                            <div class="lend-menu pc-version">
+                                                <div class="lend-menu__item">
+                                                    <h6>Занимаете</h6>
+                                                    <p>
+                                                        <span id="value"></span>
+                                                        <span class="currency">РУБ</span>
+                                                    </p>
+                                                </div>
+                                                <div class="lend-menu__item">
+                                                    <h6>К возврату</h6>
+                                                    <p>
+                                                        <span id="value1"></span>
+                                                        <span class="currency">РУБ</span>
+                                                    </p>
+                                                </div>
+                                                <div class="lend-menu__item">
+                                                    <h6>Возврат - <span class="lend-day"></span></h6>
+                                                    <div class="full-date">
+                                                        <span class="lend-date"></span>
+                                                        <span class="lend-month"></span>
+                                                        ,
+                                                        <span class="lend-year"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lend-right">
+                                            <div class="wrapper-input-number">
+                                                <input type="number" class="input-number quantity-num" id="num1" value="10000" min="100" max="30000">
+                                                <div class="wrapper-arrows">
+                                                    <button class="quantity-arrow-plus arrows"> + </button>
+                                                    <button class="quantity-arrow-minus arrows"> - </button>
+                                                </div>
+                                            </div>
+                                            <div class="wrapper-input-number">
+                                                <input type="number" class="input-number quantity-date" id="num2" value="10" min="7" max="21">
+                                                
+                                                <div class="wrapper-arrows">
+                                                    <button class="arrows plus-date"> + </button>
+                                                    <button class="arrows minus-date"> - </button>
+                                                </div>
+                                            </div>
+                                            <div class="lend-menu mob-version">
+                                                <div class="lend-menu__item">
+                                                    <h6>Занимаете</h6>
+                                                    <p>
+                                                        <span id="value2"></span>
+                                                        <span class="currency">РУБ</span>
+                                                    </p>
+                                                </div>
+                                                <div class="lend-menu__item">
+                                                    <h6>К возврату</h6>
+                                                    <p>
+                                                        <span id="value3"></span>
+                                                        <span class="currency">РУБ</span>
+                                                    </p>
+                                                </div>
+                                                <div class="lend-menu__item">
+                                                    <h6>Возврат - <span class="lend-day"></span></h6>
+                                                    <div class="full-date">
+                                                        <span class="lend-date"></span>
+                                                        <span class="lend-month"></span>
+                                                        ,
+                                                        <span class="lend-year"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="wrapper-button lend-button">
+                                                <a href="#" class="link-button">Получить займ</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="wrapper-lend-info">
+                                    <div class="lend-info">
+                                        <div class="lend-info__item">
+                                            <div class="info-circle">
+                                                1
+                                            </div>
+                                            <div class="info-text">
+                                                <h4>Регистрация и деньги</h4>
+                                                <p>всего за 10 минут</p>
+                                            </div>
+                                        </div>
+                                        <div class="lend-info__item">
+                                            <div class="info-circle">
+                                                2
+                                            </div>
+                                            <div class="info-text">
+                                                <h4>Моментальное</h4>
+                                                <p>одобрение займов</p>
+                                            </div>
+                                        </div>
+                                        <div class="lend-info__item">
+                                            <div class="info-circle">
+                                                3
+                                            </div>
+                                            <div class="info-text">
+                                                <h4>Мгновенный</h4>
+                                                <p>перевод средств</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lend-pay">
+                                    <h3>Мгновенно. Круглосуточно. На любой счет.</h3>
+                                    <div class="pay-menu">
+                                        <div class="pay-menu__item pay-menu__qiwi">
+                                            <img src="img/icons/1.svg" alt="">
+                                        </div>
+                                        <div class="pay-menu__item pay-menu__yandex">
+                                            <img src="img/icons/2.svg" alt="">
+                                        </div>
+                                        <div class="pay-menu__item pay-menu__visa">
+                                            <img src="img/icons/3.svg" alt="">
+                                        </div>
+                                        <div class="pay-menu__item pay-menu__master">
+                                            <img src="img/icons/4.svg" alt="">
+                                        </div>
+                                        <div class="pay-menu__item pay-menu__mir">
+                                            <img src="img/icons/5.svg" alt="">
+                                        </div>
+                                        <div class="pay-menu__item pay-menu__korona">
+                                            <img src="img/icons/6.svg" alt="">
+                                        </div>
+                                        <div class="pay-menu__item pay-menu__contact">
+                                            <img src="img/icons/7.svg" alt="">
+                                        </div>
+                                        <div class="pay-menu__item pay-menu__bank">
+                                            <img src="img/icons/8.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="wrapper-button-main term">
+                                        <a href="popup-0" class="js-btn-popup link-button">Сроки зачисления</a>
+                                    </div>
+                                   
+                                    <div class="popup js-popup" data-id-popup="popup-0">
+                                        <div class="popup__opas"></div>
+                                        <div class="popup__wrapp js-popup__wrapp">
+                                            <span class="popup__close js-popup__close"></span>
+                                            <div class="popup-container">
+                                                <div class="popup-content">
+                                                    <h2 class="popup-title">Сроки зачисления</h2>
+                                                    <table>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="pay-menu__item pay-menu__qiwi">
+                                                                    <img src="img/icons/1.svg" alt="">
+                                                                </div>
+                                                            </td>
+                                                            <td>Мгновенно 24х7</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="pay-menu__item pay-menu__yandex">
+                                                                    <img src="img/icons/2.svg" alt="">
+                                                                </div>
+                                                            </td>
+                                                            <td>Мгновенно 24х7</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="pay-menu__item pay-menu__visa">
+                                                                    <img src="img/icons/3.svg" alt="">
+                                                                </div>
+                                                            </td>
+                                                            <td>Мгновенно 24х7</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="pay-menu__item pay-menu__master">
+                                                                    <img src="img/icons/4.svg" alt="">
+                                                                </div>
+                                                            </td>
+                                                            <td>Мгновенно 24х7</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="pay-menu__item pay-menu__mir">
+                                                                    <img src="img/icons/5.svg" alt="">
+                                                                </div>
+                                                            </td>
+                                                            <td>Мгновенно 24х7</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="pay-menu__item pay-menu__korona">
+                                                                    <img src="img/icons/6.svg" alt="">
+                                                                </div>
+                                                            </td>
+                                                            <td>Мгновенно 24х7</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <div class="pay-menu__item pay-menu__contact">
+                                                                    <img src="img/icons/7.svg" alt="">
+                                                                </div>
+                                                            </td>
+                                                            <td>Мгновенно 24х7</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <a name="id1" id="id1" class="anchor"></a>
+                                <div class="wrapper-button-main">
+                                    <a href="#" class="link-button">Войти в личный кабинет</a>
+                                </div>
+                                <div class="wrapper-button-main">
+                                    <a href="#" class="link-button">Войти в личный кабинет</a>
+                                </div>
+                            </div>
+                            <div class="main__left-content">
+                                <h2>Возможности кабинета</h2>
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, reprehenderit.</li>
+                                    <li>Sint, reprehenderit placeat? Illo error architecto blanditiis ratione consequatur laborum!</li>
+                                    <li>Dignissimos, placeat cum sit ipsa ab non nesciunt molestiae qui?</li>
+                                    <li>Tempora, quibusdam distinctio quidem aperiam pariatur iste nam hic odit.</li>
+                                    <li>Doloribus, ipsam. Quos omnis aliquid culpa odio suscipit maiores consequuntur!</li>
+                                </ul>
+                                
+                                <h2>Рыбатекст<a name="id2" id="id2" class="anchor"></a></h2>
+                                <p>Lorem ipsum, <a href="#">dolor sit amet consectetur</a> adipisicing elit. Temporibus iure quam modi, impedit atque natus? Reiciendis doloribus dolores distinctio fugit odio ab facere, mollitia dolor! In quae aliquam perspiciatis animi laudantium. Corrupti facere, in sint est earum excepturi quas quidem, et laudantium nisi dolor laborum reprehenderit pariatur aliquid accusamus quasi debitis fugiat possimus illo veritatis id doloremque! Expedita, nesciunt quisquam.</p>
+                                <p>Blanditiis suscipit minima beatae esse vel, dolor animi numquam, nam laudantium a cum doloremque, enim provident dicta minus eveniet. Perspiciatis maiores quasi, quaerat rerum iure eaque sunt voluptatem, temporibus aperiam explicabo debitis ullam perferendis quos atque laboriosam eum. Consequatur aliquam quae nemo sint quaerat. Atque, ab quae! Iure sapiente, saepe a, vero natus at sint praesentium autem dolores officia quas?</p>
+                                <p>Sint deleniti obcaecati illo! <a href="#">Sed corrupti aspernatur</a> voluptates dolorum facere iste quo tenetur error nobis inventore veniam obcaecati vero, beatae repellendus quia. Id beatae doloremque enim neque suscipit odio veniam eligendi labore totam, impedit iure maxime ad consectetur obcaecati velit ipsam nulla praesentium a ipsum aperiam cumque quibusdam repudiandae voluptatibus quasi? Laudantium corporis mollitia a repellat. At dolore illo nostrum.</p>
+                            </div>
+                            <div class="slider">
+                                <div class="slider__item">
+                                    <a name="id3" id="id3" class="anchor"></a>
+                                    <div class="wrapper__slider-img">
+                                        <img src="img/profile.png" alt="Avatar">
+                                    </div>
+                                    <div class="wrapper-text">
+                                        <h3 class="name-author">Ivan Davydenko</h3>
+                                        <p>HTML CSS saved us from a web disaster. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium a in deleniti est magni cum quasi aperiam illo, rem numquam.</p>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="wrapper__slider-img">
+                                        <img src="img/icons/profile.svg" alt="Avatar">
+                                    </div>
+                                    <div class="wrapper-text">
+                                        <h3 class="name-author">Ivan Davydenko</h3>
+                                        <p>No one is better than HTML CSS. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium a in deleniti est magni cum quasi aperiam illo, rem numquam.</p>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="wrapper__slider-img">
+                                        <img src="img/profile.png" alt="Avatar">
+                                    </div>
+                                    <div class="wrapper-text">
+                                        <h3 class="name-author">Test Testovich</h3>
+                                        <p>This is test. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium a in deleniti est magni cum quasi aperiam illo, rem numquam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="comment">
+                                <ul class="menu-ul">
+                                    <li>
+                                        <div class="wrapper-comment">
+                                            <img src="img/profile.png" alt="Avatar">
+                                            <h3 class="name-author">Ivan Davydenko</h3>
+                                        </div>
+                                        <p>Добрый день, подскажите пожалуйста как сделать такой элемент + такую анимацию</p>
+                                        <a href="#" class="answer">Ответить</a>
+                                        <a href="#" class="show-comment">Посмотреть все ответы (<span class="count"></span>)</a>
+                                        <ul class="sub-menu__list">
+                                            <li class="sub-li">
+                                                <div class="wrapper-comment">
+                                                    <img src="img/test.jpg" alt="Avatar">
+                                                    <h3 class="name-author">Guru Master</h3>
+                                                </div>
+                                                <p>Смотреть <a href="#">тут</a>.</p>
+                                                <a href="#" class="answer">Ответить</a>
+                                            </li>
+                                            <li class="sub-li">
+                                                <div class="wrapper-comment">
+                                                    <img src="img/profile.png" alt="Avatar">
+                                                    <h3 class="name-author">Ivan Davydenko</h3>
+                                                </div>
+                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, harum!</p>
+                                                <a href="#" class="answer">Ответить</a>
+                                            </li>
+                                            <li class="sub-li">
+                                                <div class="wrapper-comment">
+                                                    <img src="img/test.jpg" alt="Avatar">
+                                                    <h3 class="name-author">Guru Master</h3>
+                                                </div>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fuga minima repellendus hic aliquid, nulla consequatur officiis officia dolorum obcaecati?</p>
+                                                <a href="#" class="answer">Ответить</a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="menu-ul">
+                                    <li>
+                                        <div class="wrapper-comment">
+                                            <img src="img/profile.png" alt="Avatar">
+                                            <h3 class="name-author">Ivan Davydenko</h3>
+                                        </div>
+                                        <p>Добрый день, подскажите пожалуйста как сделать такой элемент + такую анимацию</p>
+                                        <a href="#" class="answer">Ответить</a>
+                                        <a href="#" class="show-comment">Посмотреть все ответы (<span class="count"></span>)</a>
+                                        <ul class="sub-menu__list">
+                                            <li class="sub-li"> 
+                                                <div class="wrapper-comment">
+                                                    <img src="img/test.jpg" alt="Avatar">
+                                                    <h3 class="name-author">Guru Master</h3>
+                                                </div>
+                                                <p>Смотреть <a href="#">тут</a>.</p>
+                                                <a href="#" class="answer">Ответить</a>
+                                            </li>
+                                            <li class="sub-li">
+                                                <div class="wrapper-comment">
+                                                    <img src="img/profile.png" alt="Avatar">
+                                                    <h3 class="name-author">Ivan Davydenko</h3>
+                                                </div>
+                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, harum!</p>
+                                                <a href="#" class="answer">Ответить</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="main__right">
+                            <a href="#"> 
+                                <div class="wrapper-img">
+                                    <img src="img/test2.jpg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <div class="container">
+                <a name="id4" id="id4" class="anchor"></a>
+                <div class="footer-links">
+                    <p><a href="#">eKapusta-Kabinet.ru</a> - все о личном кабинете сервиса онлайн-займов еКапуста, а так же инструкции по входу, управлению, восстановлению пароля, оплате займа и подаче онлайн-заявки на заём.</p>
+                    <p>Сайт eKapusta-Kabinet не является микрофинансовой компанией и не выдает займы. Сайт носит исключительно справочно-информационный характер и не является публичной офертой.</p>
+                </div>
+                <div class="header-top">
+                    <div class="wrapper-logo">
+                        <a href="#">
+                            <img src="img/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="header-top__right">
+                        <ul class="footer__list header__list">
+                            <li>
+                                <a href="#id1">О нашей студии</a>
+                            </li>
+                            <li>
+                                <a href="#id2">Наши работы</a>
+                            </li>
+                            <li>
+                                <a href="#id3">Продвижение</a>
+                            </li>
+                            <li>
+                                <a href="#id4">Контакты</a>
+                            </li>
+                        </ul>
+                        <a href="tel:+1234567890" class="header-tel">
+                            <div class="wrapper-icons">
+                                <img src="img/icons/call.svg" alt="">
+                            </div>
+                            <div class="wrapper-number">
+                                <div class="number__tel">+1234567890</div>
+                                <h4 class="number__text">Гарячая линия</h4>
+                            </div>
+                        </a>
+                        <div class="wrapper-button">
+                            <a href="#" class="link-button">Получить займ</a>
+                        </div>    
+                    </div>
+                </div>
+                <ul class="footer-ul">
+                    <li>
+                        <a href="#">Условия пользовательского соглашения</a>
+                    </li>
+                    <li>
+                        <a href="#">Политика конфиденциальности</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /ОБОЛОЧКА -->
+
+    <!-- попап -->
+    <!-- <div class="popup js-popup" data-id-popup="popup-0">
+        <div class="popup__opas"></div>
+        <div class="popup__wrapp js-popup__wrapp">
+            <span class="popup__close js-popup__close"></span>
+            <div class="popup_container">
+                <h2>Попап</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup js-popup" data-id-popup="popup-1">
+        <div class="popup__opas"></div>
+        <div class="popup__wrapp js-popup__wrapp">
+            <span class="popup__close js-popup__close"></span>
+            <div class="popup_container">
+                <h2>Попап 2</h2>
+            </div>
+        </div>
+    </div> -->
+    <!-- /попап -->
+
+    <!-- кнопка прокрутки вверх -->
+    <div class="srolles-top js-up">
+        <button class="srolles-top__btn js-srolles-top"></button>
+    </div>
+    <!-- /кнопка прокрутки вверх -->
+
+
+    <!-- Подключеине скриптов -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>  -->
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="libs/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
